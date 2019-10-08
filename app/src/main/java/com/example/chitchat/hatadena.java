@@ -13,7 +13,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+public class hatadena extends AppCompatActivity {
     FirebaseAuth mAuth;
     Button signout,active;
     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
       
-        mAuth = FirebaseAuth.getInstance();
+       /* mAuth = FirebaseAuth.getInstance();
         signout=(Button)findViewById(R.id.signout);
         active=findViewById(R.id.Active);		//signin and signout features
         signout.setOnClickListener(new View.OnClickListener() {
@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ActiveUser.class));
             }
-        });
+        });*/
     }
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -51,5 +51,5 @@ public class MainActivity extends AppCompatActivity {
         else
             Toast.makeText(MainActivity.this,"unsuccess",Toast.LENGTH_SHORT).show();
 
-    }
+    }*/
 }

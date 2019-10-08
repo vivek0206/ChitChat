@@ -15,6 +15,8 @@ import com.example.chitchat.User;
 
 import java.util.List;
 
+//this is adapter class for getting available users
+
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
     private Context context;
     private List<User> mUsers;
